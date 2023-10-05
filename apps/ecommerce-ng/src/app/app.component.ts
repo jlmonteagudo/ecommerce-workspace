@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { LayoutDefaultComponent } from '@ecommerce/layout-default';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'ecommerce-workspace-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  imports: [RouterModule, LayoutDefaultComponent],
+  selector: 'ecommerce-root',
+  template: `
+    <ecommerce-layout-default />
+    <!-- <router-outlet></router-outlet> -->
+  `,
 })
 export class AppComponent {
   title = 'ecommerce-ng';

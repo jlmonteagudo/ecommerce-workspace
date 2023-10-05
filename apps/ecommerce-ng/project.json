@@ -2,7 +2,7 @@
   "name": "ecommerce-ng",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "ecommerce-workspace",
+  "prefix": "ecommerce",
   "sourceRoot": "apps/ecommerce-ng/src",
   "tags": [],
   "targets": {
