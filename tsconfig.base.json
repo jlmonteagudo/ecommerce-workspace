@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ecommerce/layout-default": ["libs/ui/layout-default/src/index.ts"]
+      "@ecommerce/feature-default-layout": [
+        "libs/layouts/feature-default-layout/src/index.ts"
+      ],
+      "@ecommerce/feature-home": ["libs/home/feature-home/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

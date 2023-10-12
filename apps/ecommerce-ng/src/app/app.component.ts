@@ -1,16 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { LayoutDefaultComponent } from '@ecommerce/layout-default';
+import { FeatureDefaultLayoutComponent } from '@ecommerce/feature-default-layout';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, LayoutDefaultComponent],
+  imports: [RouterModule, FeatureDefaultLayoutComponent],
   selector: 'ecommerce-root',
-  template: `
-    <ecommerce-layout-default />
-    <!-- <router-outlet></router-outlet> -->
-  `,
+  template: ` <ecommerce-feature-default-layout /> `,
 })
-export class AppComponent {
-  title = 'ecommerce-ng';
-}
+export class AppComponent {}

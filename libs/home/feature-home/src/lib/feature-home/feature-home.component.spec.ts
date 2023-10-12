@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { LayoutDefaultComponent } from './layout-default.component';
+import { FeatureHomeComponent } from './feature-home.component';
 
-describe('LayoutDefaultComponent', () => {
-  let component: LayoutDefaultComponent;
-  let fixture: ComponentFixture<LayoutDefaultComponent>;
+describe('FeatureHomeComponent', () => {
+  let component: FeatureHomeComponent;
+  let fixture: ComponentFixture<FeatureHomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LayoutDefaultComponent],
+      imports: [FeatureHomeComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LayoutDefaultComponent);
+    fixture = TestBed.createComponent(FeatureHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
