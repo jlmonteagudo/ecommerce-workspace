@@ -5,7 +5,7 @@ import { ShopFeaturesComponent } from '../ui/shop-features/shop-features.compone
 import { CategoriesListComponent } from '../ui/categories-list/categories-list.component';
 
 @Component({
-  selector: 'ecommerce-feature-home',
+  selector: 'ecommerce-home',
   standalone: true,
   imports: [
     CommonModule,

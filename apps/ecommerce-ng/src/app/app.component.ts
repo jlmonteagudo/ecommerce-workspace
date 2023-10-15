@@ -6,6 +6,6 @@ import { FeatureDefaultLayoutComponent } from '@ecommerce/feature-default-layout
   standalone: true,
   imports: [RouterModule, FeatureDefaultLayoutComponent],
   selector: 'ecommerce-root',
-  template: ` <ecommerce-feature-default-layout /> `,
+  template: ` <ecommerce-default-layout /> `,
 })
 export class AppComponent {}

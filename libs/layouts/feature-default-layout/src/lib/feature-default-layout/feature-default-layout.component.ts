@@ -5,7 +5,7 @@ import { NavbarComponent } from '../ui/navbar/navbar.component';
 import { HeaderComponent } from '../ui/header/header.component';
 
 @Component({
-  selector: 'ecommerce-feature-default-layout',
+  selector: 'ecommerce-default-layout',
   standalone: true,
   imports: [CommonModule, RouterModule, NavbarComponent, HeaderComponent],
   template: `
