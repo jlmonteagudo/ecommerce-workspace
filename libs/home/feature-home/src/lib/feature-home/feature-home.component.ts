@@ -5,6 +5,7 @@ import { ShopFeaturesComponent } from '../ui/shop-features/shop-features.compone
 import { CategoriesListComponent } from '../ui/categories-list/categories-list.component';
 import { NewArrivalsListComponent } from '../ui/new-arrivals-list/new-arrivals-list.component';
 import { AdComponent } from '../ui/ad/ad.component';
+import { RecommendedListComponent } from '../ui/recommended-list/recommended-list.component';
 
 @Component({
   selector: 'ecommerce-home',
@@ -16,6 +17,7 @@ import { AdComponent } from '../ui/ad/ad.component';
     CategoriesListComponent,
     NewArrivalsListComponent,
     AdComponent,
+    RecommendedListComponent,
   ],
   template: `
     <ecommerce-banner-top />
@@ -23,6 +25,7 @@ import { AdComponent } from '../ui/ad/ad.component';
     <ecommerce-categories-list />
     <ecommerce-new-arrivals-list />
     <ecommerce-ad />
+    <ecommerce-recommended-list />
   `,
 })
 export class FeatureHomeComponent {}
