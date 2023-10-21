@@ -5,6 +5,7 @@ import { NavbarComponent } from '../ui/navbar/navbar.component';
 import { HeaderComponent } from '../ui/header/header.component';
 import { FooterComponent } from '../ui/footer/footer.component';
 import { MobileNavbarComponent } from '../ui/mobile-navbar/mobile-navbar.component';
+import { MobileSidebarComponent } from '../ui/mobile-sidebar/mobile-sidebar.component';
 
 @Component({
   selector: 'ecommerce-default-layout',
@@ -16,13 +17,26 @@ import { MobileNavbarComponent } from '../ui/mobile-navbar/mobile-navbar.compone
     HeaderComponent,
     FooterComponent,
     MobileNavbarComponent,
+    MobileSidebarComponent,
   ],
   template: `
     <ecommerce-header />
     <ecommerce-navbar />
-    <ecommerce-mobile-navbar />
+    <ecommerce-mobile-navbar
+      (showMobileSidebar)="onShowMobileSidebar($event)"
+    />
+    <ecommerce-mobile-sidebar
+      (showMobileSidebar)="onShowMobileSidebar($event)"
+      *ngIf="showMobileSidebar"
+    />
     <router-outlet />
     <ecommerce-footer />
   `,
 })
-export class FeatureDefaultLayoutComponent {}
+export class FeatureDefaultLayoutComponent {
+  showMobileSidebar = false;
+
+  onShowMobileSidebar(value: boolean) {
+    this.showMobileSidebar = value;
+  }
+}
