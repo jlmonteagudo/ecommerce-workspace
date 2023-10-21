@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from '../ui/navbar/navbar.component';
 import { HeaderComponent } from '../ui/header/header.component';
 import { FooterComponent } from '../ui/footer/footer.component';
+import { MobileNavbarComponent } from '../ui/mobile-navbar/mobile-navbar.component';
 
 @Component({
   selector: 'ecommerce-default-layout',
@@ -14,10 +15,12 @@ import { FooterComponent } from '../ui/footer/footer.component';
     NavbarComponent,
     HeaderComponent,
     FooterComponent,
+    MobileNavbarComponent,
   ],
   template: `
     <ecommerce-header />
     <ecommerce-navbar />
+    <ecommerce-mobile-navbar />
     <router-outlet />
     <ecommerce-footer />
   `,
