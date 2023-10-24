@@ -11,4 +11,9 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('@ecommerce/feature-home').then((m) => m.FeatureHomeComponent),
   },
+  {
+    path: 'shop',
+    loadComponent: () =>
+      import('@ecommerce/feature-shop').then((m) => m.FeatureShopComponent),
+  },
 ];

@@ -18,7 +18,8 @@
       "@ecommerce/feature-default-layout": [
         "libs/layouts/feature-default-layout/src/index.ts"
       ],
-      "@ecommerce/feature-home": ["libs/home/feature-home/src/index.ts"]
+      "@ecommerce/feature-home": ["libs/home/feature-home/src/index.ts"],
+      "@ecommerce/feature-shop": ["libs/shop/feature-shop/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
