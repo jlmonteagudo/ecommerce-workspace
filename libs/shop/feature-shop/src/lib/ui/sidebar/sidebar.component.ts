@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ListFilterComponent } from '../list-filter/list-filter.component';
 import { PriceFilterComponent } from '../price-filter/price-filter.component';
 import { SizeFilterComponent } from '../size-filter/size-filter.component';
+import { ColorFilterComponent } from '../color-filter/color-filter.component';
 
 @Component({
   selector: 'ecommerce-sidebar',
@@ -12,6 +13,7 @@ import { SizeFilterComponent } from '../size-filter/size-filter.component';
     ListFilterComponent,
     PriceFilterComponent,
     SizeFilterComponent,
+    ColorFilterComponent,
   ],
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css'],
@@ -32,4 +34,10 @@ export class SidebarComponent {
   ];
 
   readonly sizes = ['xs', 's', 'm', 'l', 'xl'];
+
+  readonly colors = [
+    { name: 'White', code: 'white' },
+    { name: 'Black', code: 'black' },
+    { name: 'Red', code: 'red' },
+  ];
 }
