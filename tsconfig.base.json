@@ -15,11 +15,16 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ecommerce/data-access-product": [
+        "libs/product/data-access-product/src/index.ts"
+      ],
       "@ecommerce/feature-default-layout": [
         "libs/layouts/feature-default-layout/src/index.ts"
       ],
       "@ecommerce/feature-home": ["libs/home/feature-home/src/index.ts"],
-      "@ecommerce/feature-shop": ["libs/shop/feature-shop/src/index.ts"]
+      "@ecommerce/feature-shop": ["libs/shop/feature-shop/src/index.ts"],
+      "@ecommerce/models-product": ["libs/product/models-product/src/index.ts"],
+      "@ecommerce/ui-product": ["libs/product/ui-product/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

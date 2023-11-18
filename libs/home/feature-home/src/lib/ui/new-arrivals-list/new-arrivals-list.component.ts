@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductListItemComponent } from '../product-list-item/product-list-item.component';
+import { ProductListItemComponent } from '@ecommerce/ui-product';
+import { ProductListItem } from '@ecommerce/models-product';
 
 @Component({
   selector: 'ecommerce-new-arrivals-list',
@@ -9,4 +10,6 @@ import { ProductListItemComponent } from '../product-list-item/product-list-item
   templateUrl: './new-arrivals-list.component.html',
   styleUrls: ['./new-arrivals-list.component.css'],
 })
-export class NewArrivalsListComponent {}
+export class NewArrivalsListComponent {
+  @Input() productListItems!: ProductListItem[];
+}
