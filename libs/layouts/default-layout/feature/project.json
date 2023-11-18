@@ -1,7 +1,7 @@
 {
-  "name": "feature-default-layout",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/layouts/feature-default-layout/src",
+  "name": "default-layout-feature",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/layouts/default-layout/feature/src",
   "prefix": "ecommerce",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/layouts/feature-default-layout/jest.config.ts",
+        "jestConfig": "libs/layouts/default-layout/feature/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/layouts/feature-default-layout/**/*.ts",
-          "libs/layouts/feature-default-layout/**/*.html"
+          "libs/layouts/default-layout/feature/**/*.ts",
+          "libs/layouts/default-layout/feature/**/*.html"
         ]
       }
     }

@@ -33,7 +33,7 @@ import { MobileSidebarComponent } from '../ui/mobile-sidebar/mobile-sidebar.comp
     <ecommerce-footer />
   `,
 })
-export class FeatureDefaultLayoutComponent {
+export class DefaultLayoutComponent {
   showMobileSidebar = false;
 
   onShowMobileSidebar(value: boolean) {
