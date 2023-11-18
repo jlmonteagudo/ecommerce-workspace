@@ -29,7 +29,7 @@ import { ProductListItem } from '@ecommerce/models-product';
     <ecommerce-recommended-list [productListItems]="recommendedProducts" />
   `,
 })
-export class FeatureHomeComponent {
+export class HomeComponent {
   readonly newArrivals: ProductListItem[] = [
     {
       urlImage: '/assets/images/products/product1.jpg',

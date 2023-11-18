@@ -8,8 +8,7 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'home',
-    loadComponent: () =>
-      import('@ecommerce/feature-home').then((m) => m.FeatureHomeComponent),
+    loadComponent: () => import('@ecommerce/home').then((m) => m.HomeComponent),
   },
   {
     path: 'shop',
