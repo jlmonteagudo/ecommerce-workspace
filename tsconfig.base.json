@@ -18,12 +18,12 @@
       "@ecommerce/data-access-product": [
         "libs/product/data-access-product/src/index.ts"
       ],
-      "@ecommerce/feature-shop": ["libs/shop/feature-shop/src/index.ts"],
       "@ecommerce/home": ["libs/home/feature/src/index.ts"],
       "@ecommerce/layouts/default-layout": [
         "libs/layouts/default-layout/feature/src/index.ts"
       ],
       "@ecommerce/models-product": ["libs/product/models-product/src/index.ts"],
+      "@ecommerce/shop": ["libs/shop/feature/src/index.ts"],
       "@ecommerce/ui-product": ["libs/product/ui-product/src/index.ts"]
     }
   },

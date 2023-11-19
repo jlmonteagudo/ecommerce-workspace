@@ -7,7 +7,7 @@ import { ProductListItemComponent } from '@ecommerce/ui-product';
 import { ProductListItem } from '@ecommerce/models-product';
 
 @Component({
-  selector: 'ecommerce-feature-shop',
+  selector: 'ecommerce-shop',
   standalone: true,
   imports: [
     CommonModule,
@@ -35,7 +35,7 @@ import { ProductListItem } from '@ecommerce/models-product';
     </div>
   `,
 })
-export class FeatureShopComponent {
+export class ShopComponent {
   readonly productListItems: ProductListItem[] = [
     {
       urlImage: '/assets/images/products/product1.jpg',

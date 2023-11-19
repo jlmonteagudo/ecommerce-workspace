@@ -1,7 +1,7 @@
 {
-  "name": "feature-shop",
+  "name": "shop-feature",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/shop/feature-shop/src",
+  "sourceRoot": "libs/shop/feature/src",
   "prefix": "ecommerce",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/shop/feature-shop/jest.config.ts",
+        "jestConfig": "libs/shop/feature/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/shop/feature-shop/**/*.ts",
-          "libs/shop/feature-shop/**/*.html"
+          "libs/shop/feature/**/*.ts",
+          "libs/shop/feature/**/*.html"
         ]
       }
     }

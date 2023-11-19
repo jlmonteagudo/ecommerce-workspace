@@ -12,7 +12,6 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'shop',
-    loadComponent: () =>
-      import('@ecommerce/feature-shop').then((m) => m.FeatureShopComponent),
+    loadComponent: () => import('@ecommerce/shop').then((m) => m.ShopComponent),
   },
 ];
