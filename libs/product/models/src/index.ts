@@ -1,1 +1,1 @@
-export * from './lib/interfaces/product-list-item';
+export * from './lib/product-list-item';
