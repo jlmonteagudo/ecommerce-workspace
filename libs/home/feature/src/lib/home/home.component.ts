@@ -6,7 +6,7 @@ import { CategoriesListComponent } from '../ui/categories-list/categories-list.c
 import { NewArrivalsListComponent } from '../ui/new-arrivals-list/new-arrivals-list.component';
 import { AdComponent } from '../ui/ad/ad.component';
 import { RecommendedListComponent } from '../ui/recommended-list/recommended-list.component';
-import { ProductListItem } from '@ecommerce/models-product';
+import { ProductListItem } from '@ecommerce/product-models';
 
 @Component({
   selector: 'ecommerce-home',

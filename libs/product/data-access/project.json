@@ -1,7 +1,7 @@
 {
-  "name": "ui-product",
+  "name": "product-data-access",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/product/ui-product/src",
+  "sourceRoot": "libs/product/data-access/src",
   "prefix": "ecommerce",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/product/ui-product/jest.config.ts",
+        "jestConfig": "libs/product/data-access/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/product/ui-product/**/*.ts",
-          "libs/product/ui-product/**/*.html"
+          "libs/product/data-access/**/*.ts",
+          "libs/product/data-access/**/*.html"
         ]
       }
     }

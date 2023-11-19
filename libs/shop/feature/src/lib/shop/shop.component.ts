@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { BreadcrumbComponent } from '../ui/breadcrumb/breadcrumb.component';
 import { SidebarComponent } from '../ui/sidebar/sidebar.component';
 import { SortingComponent } from '../ui/sorting/sorting.component';
-import { ProductListItemComponent } from '@ecommerce/ui-product';
-import { ProductListItem } from '@ecommerce/models-product';
+import { ProductListItemComponent } from '@ecommerce/product-ui';
+import { ProductListItem } from '@ecommerce/product-models';
 
 @Component({
   selector: 'ecommerce-shop',
