@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/product/models/src",
   "prefix": "ecommerce",
-  "tags": [],
+  "tags": ["type:models"],
   "projectType": "library",
   "targets": {
     "test": {
