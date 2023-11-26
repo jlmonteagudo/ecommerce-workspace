@@ -33,7 +33,7 @@ export class HomeComponent {
   readonly newArrivals: ProductListItem[] = [
     {
       urlImage: '/assets/images/products/product1.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -42,7 +42,7 @@ export class HomeComponent {
     },
     {
       urlImage: '/assets/images/products/product2.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 46.0,
       oldPrice: 56.0,
@@ -51,7 +51,7 @@ export class HomeComponent {
     },
     {
       urlImage: '/assets/images/products/product3.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -60,7 +60,7 @@ export class HomeComponent {
     },
     {
       urlImage: '/assets/images/products/product4.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -72,7 +72,7 @@ export class HomeComponent {
   readonly recommendedProducts: ProductListItem[] = [
     {
       urlImage: '/assets/images/products/product1.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -81,7 +81,7 @@ export class HomeComponent {
     },
     {
       urlImage: '/assets/images/products/product2.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 46.0,
       oldPrice: 56.0,
@@ -90,7 +90,7 @@ export class HomeComponent {
     },
     {
       urlImage: '/assets/images/products/product3.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -99,7 +99,7 @@ export class HomeComponent {
     },
     {
       urlImage: '/assets/images/products/product4.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -108,7 +108,7 @@ export class HomeComponent {
     },
     {
       urlImage: '/assets/images/products/product5.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -117,7 +117,7 @@ export class HomeComponent {
     },
     {
       urlImage: '/assets/images/products/product6.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 46.0,
       oldPrice: 56.0,
@@ -126,7 +126,7 @@ export class HomeComponent {
     },
     {
       urlImage: '/assets/images/products/product7.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -135,7 +135,7 @@ export class HomeComponent {
     },
     {
       urlImage: '/assets/images/products/product8.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,

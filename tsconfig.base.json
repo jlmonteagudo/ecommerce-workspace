@@ -19,12 +19,14 @@
       "@ecommerce/layouts/default-layout": [
         "libs/layouts/default-layout/feature/src/index.ts"
       ],
+      "@ecommerce/product": ["libs/product/feature/src/index.ts"],
       "@ecommerce/product-data-access": [
         "libs/product/data-access/src/index.ts"
       ],
       "@ecommerce/product-models": ["libs/product/models/src/index.ts"],
       "@ecommerce/product-ui": ["libs/product/ui/src/index.ts"],
-      "@ecommerce/shop": ["libs/shop/feature/src/index.ts"]
+      "@ecommerce/shop": ["libs/shop/feature/src/index.ts"],
+      "@ecommerce/shop-ui": ["libs/shop/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

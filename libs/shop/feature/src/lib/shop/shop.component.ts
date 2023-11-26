@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BreadcrumbComponent } from '../ui/breadcrumb/breadcrumb.component';
 import { SidebarComponent } from '../ui/sidebar/sidebar.component';
 import { SortingComponent } from '../ui/sorting/sorting.component';
 import { ProductListItemComponent } from '@ecommerce/product-ui';
 import { ProductListItem } from '@ecommerce/product-models';
+import { BreadcrumbComponent } from '@ecommerce/shop-ui';
 
 @Component({
   selector: 'ecommerce-shop',
@@ -39,7 +39,7 @@ export class ShopComponent {
   readonly productListItems: ProductListItem[] = [
     {
       urlImage: '/assets/images/products/product1.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -48,7 +48,7 @@ export class ShopComponent {
     },
     {
       urlImage: '/assets/images/products/product2.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 46.0,
       oldPrice: 56.0,
@@ -57,7 +57,7 @@ export class ShopComponent {
     },
     {
       urlImage: '/assets/images/products/product3.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -66,7 +66,7 @@ export class ShopComponent {
     },
     {
       urlImage: '/assets/images/products/product4.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -75,7 +75,7 @@ export class ShopComponent {
     },
     {
       urlImage: '/assets/images/products/product5.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
@@ -84,7 +84,7 @@ export class ShopComponent {
     },
     {
       urlImage: '/assets/images/products/product6.jpg',
-      link: 'view.html',
+      link: '/product',
       title: 'Guyer Chair',
       price: 45.0,
       oldPrice: 55.0,
