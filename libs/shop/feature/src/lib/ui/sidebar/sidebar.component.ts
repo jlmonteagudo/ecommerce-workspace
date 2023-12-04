@@ -2,8 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListFilterComponent } from '../list-filter/list-filter.component';
 import { PriceFilterComponent } from '../price-filter/price-filter.component';
-import { SizeFilterComponent } from '../size-filter/size-filter.component';
-import { ColorFilterComponent } from '../color-filter/color-filter.component';
+import {
+  ColorFilterComponent,
+  SizeFilterComponent,
+} from '@ecommerce/product-ui';
 
 @Component({
   selector: 'ecommerce-sidebar',

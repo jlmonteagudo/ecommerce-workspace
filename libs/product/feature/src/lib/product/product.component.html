@@ -1,6 +1,175 @@
 <ecommerce-breadcrumb />
 <div class="container pt-4 pb-6 grid lg:grid-cols-2 gap-6">
+  <ecommerce-image-viewer [productImagesUrls]="productImagesUrls" />
+
+  <!-- PRODUCT CONTENT -->
   <div>
-    <ecommerce-image-viewer [productImagesUrls]="productImagesUrls" />
+    <h2 class="md:text-3xl text-2xl font-medium uppercase mb-2">
+      {{ product.title }}
+    </h2>
+    <ecommerce-rating [reviewsNumber]="product.reviewsNumber" class="mb-4" />
+    <div class="mt-4 space-y-2">
+      <p class="text-gray-800 font-semibold space-x-2">
+        <span>Availability: </span>
+        <span class="text-green-600">{{ product.stock }}</span>
+      </p>
+
+      <p class="text-gray-800 font-semibold space-x-2">
+        <span>Brand: </span>
+        <span class="text-gray-600 font-normal">{{ product.brand }}</span>
+      </p>
+
+      <p class="text-gray-800 font-semibold space-x-2">
+        <span>Category: </span>
+        <span class="text-gray-600 font-normal">{{ product.category }}</span>
+      </p>
+
+      <p class="text-gray-800 font-semibold space-x-2">
+        <span>SKU: </span>
+        <span class="text-gray-600 font-normal">{{ product.sku }}</span>
+      </p>
+    </div>
+
+    <div class="mt-4 flex items-baseline gap-3">
+      <span class="text-primary font-semibold text-xl"
+        >$ {{ product.price }}</span
+      >
+      <span class="text-gray-500 text-base line-through"
+        >$ {{ product.oldPrice }}</span
+      >
+    </div>
+
+    <p class="mt-4 text-gray-600">{{ product.shortDescription }}</p>
+
+    <ecommerce-size-filter [sizes]="sizes" />
+
+    <ecommerce-color-filter [colors]="colors" />
+
+    <!-- QUANTITY -->
+    <div class="mt-4">
+      <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Quantity</h3>
+      <div
+        class="flex border border-gray-300 text-gray-600 divide-x divide-gray-300 w-max"
+      >
+        <div
+          class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none"
+        >
+          -
+        </div>
+        <div class="h-8 w-8 text-base flex items-center justify-center">4</div>
+        <div
+          class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none"
+        >
+          +
+        </div>
+      </div>
+    </div>
+    <!-- END QUANTITY -->
+
+    <!-- ADD TO CART BUTTON -->
+    <div class="flex gap-3 border-b border-gray-200 pb-5 mt-6">
+      <a
+        href="#"
+        class="bg-primary border border-primary text-white px-8 py-2 font-medium rounded uppercase hover:bg-transparent hover:text-primary transition text-sm flex items-center"
+      >
+        <span class="mr-2"><i class="fas fa-shopping-bag"></i></span>
+        Add to cart
+      </a>
+
+      <a
+        href="#"
+        class="border border-gray-600 text-gray-600 px-8 py-2 font-medium rounded uppercase hover:bg-transparent hover:text-primary transition text-sm flex items-center"
+      >
+        <span class="mr-2"><i class="fas fa-heart"></i></span>
+        Whishlist
+      </a>
+    </div>
+    <!-- END ADD TO CART BUTTON -->
+
+    <!-- SOCIAL SHARE -->
+    <div class="flex space-x-3 mt-4">
+      <a
+        href="#"
+        class="text-gray-400 hover:text-gray-600 h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a
+        href="#"
+        class="text-gray-400 hover:text-gray-600 h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center"
+      >
+        <i class="fab fa-twitter"></i>
+      </a>
+
+      <a
+        href="#"
+        class="text-gray-400 hover:text-gray-600 h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <!-- END SOCIAL SHARE -->
+  </div>
+  <!-- END PRODUCT CONTENT -->
+</div>
+
+<!-- PRODUCT DETAILS -->
+<div class="container pb-16">
+  <h3
+    class="border-b border-gray-200 font-roboto text-gray-800 font-medium pb-3"
+  >
+    Product Details
+  </h3>
+
+  <div class="lg:w-4/5 xl:w-3/5 pt-6">
+    <div class="space-y-3 text-gray-600">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at felis
+        a enim iaculis porttitor. Sed est massa, pretium eget arcu quis, feugiat
+        porta nisl. Pellentesque vulputate ultricies massa quis pretium.
+        Praesent viverra aliquet massa. Mauris bibendum tincidunt lorem at
+        interdum. Nulla sed maximus neque, nec vehicula libero.
+      </p>
+      <p>
+        Suspendisse ornare, quam in auctor maximus, massa lacus gravida nulla,
+        ac ultricies nisi tortor id ante. Phasellus sodales dignissim faucibus.
+        Aenean a neque id dolor volutpat suscipit ut eu velit. Nam interdum,
+        justo vitae eleifend convallis, sem justo ullamcorper ligula, eget
+        dignissim quam nisi at urna. Integer justo lacus, accumsan et molestie
+        at, euismod in dolor. Vestibulum non ornare massa.
+      </p>
+      <p>
+        ed scelerisque laoreet massa in bibendum. Nunc elementum elit vel
+        ullamcorper cursus. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas.
+      </p>
+    </div>
+
+    <table
+      class="table-auto border-collapse w-full text-left text-gray-600 text-sm mt-6"
+    >
+      <tr>
+        <th class="py-2 px-4 border border-gray-300 w-40 font-semibold">
+          Color
+        </th>
+        <td class="py-2 px-4 border border-gray-300">Black, Brown, Red</td>
+      </tr>
+      <tr>
+        <th class="py-2 px-4 border border-gray-300 w-40 font-semibold">
+          Size
+        </th>
+        <td class="py-2 px-4 border border-gray-300">XL, L, M, S</td>
+      </tr>
+      <tr>
+        <th class="py-2 px-4 border border-gray-300 w-40 font-semibold">
+          Weight
+        </th>
+        <td class="py-2 px-4 border border-gray-300">55 Kg</td>
+      </tr>
+    </table>
   </div>
 </div>
+<!-- END PRODUCT DETAILS -->
+
+<ecommerce-related-products [productListItems]="relatedProducts" />

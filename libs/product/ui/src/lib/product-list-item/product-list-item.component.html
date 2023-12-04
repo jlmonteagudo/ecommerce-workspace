@@ -39,19 +39,7 @@
       </p>
     </div>
 
-    <div class="flex items-center">
-      <div class="flex gap-1 text-sm text-yellow-400">
-        <span><i class="fas fa-star"></i></span>
-        <span><i class="fas fa-star"></i></span>
-        <span><i class="fas fa-star"></i></span>
-        <span><i class="fas fa-star"></i></span>
-        <span><i class="fas fa-star"></i></span>
-      </div>
-
-      <div class="text-xs text-gray-500 ml-3">
-        ({{ productListItem.reviewsNumber }})
-      </div>
-    </div>
+    <ecommerce-rating [reviewsNumber]="productListItem.reviewsNumber" />
   </div>
 
   <a
