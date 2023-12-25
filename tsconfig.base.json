@@ -15,18 +15,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ecommerce/home": ["libs/home/feature/src/index.ts"],
-      "@ecommerce/layouts/default-layout": [
-        "libs/layouts/default-layout/feature/src/index.ts"
+      "@ecommerce/data-access-product": [
+        "libs/product/data-access-product/src/index.ts"
       ],
-      "@ecommerce/product": ["libs/product/feature/src/index.ts"],
-      "@ecommerce/product-data-access": [
-        "libs/product/data-access/src/index.ts"
+      "@ecommerce/feature-default-layout": [
+        "libs/layouts/default-layout/feature-default-layout/src/index.ts"
       ],
-      "@ecommerce/product-models": ["libs/product/models/src/index.ts"],
-      "@ecommerce/product-ui": ["libs/product/ui/src/index.ts"],
-      "@ecommerce/shop": ["libs/shop/feature/src/index.ts"],
-      "@ecommerce/shop-ui": ["libs/shop/ui/src/index.ts"]
+      "@ecommerce/feature-home": ["libs/home/feature-home/src/index.ts"],
+      "@ecommerce/feature-product": [
+        "libs/product/feature-product/src/index.ts"
+      ],
+      "@ecommerce/feature-shop": ["libs/shop/feature-shop/src/index.ts"],
+      "@ecommerce/models-product": ["libs/product/models-product/src/index.ts"],
+      "@ecommerce/ui-product": ["libs/product/ui-product/src/index.ts"],
+      "@ecommerce/ui-shop": ["libs/shop/ui-shop/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

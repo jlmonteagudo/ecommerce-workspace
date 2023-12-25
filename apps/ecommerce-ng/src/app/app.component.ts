@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DefaultLayoutComponent } from '@ecommerce/layouts/default-layout';
+import { DefaultLayoutComponent } from '@ecommerce/feature-default-layout';
 
 @Component({
   standalone: true,
