@@ -22,6 +22,7 @@
         "libs/layouts/default-layout/feature-default-layout/src/index.ts"
       ],
       "@ecommerce/feature-home": ["libs/home/feature-home/src/index.ts"],
+      "@ecommerce/feature-login": ["libs/auth/feature-login/src/index.ts"],
       "@ecommerce/feature-product": [
         "libs/product/feature-product/src/index.ts"
       ],

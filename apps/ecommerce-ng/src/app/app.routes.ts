@@ -21,4 +21,9 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('@ecommerce/feature-product').then((m) => m.ProductComponent),
   },
+  {
+    path: 'login',
+    loadComponent: () =>
+      import('@ecommerce/feature-login').then((m) => m.LoginComponent),
+  },
 ];
