@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidebarComponent } from '../ui/sidebar/sidebar.component';
-import { SortingComponent } from '../ui/sorting/sorting.component';
 import { ProductListItemComponent } from '@ecommerce/ui-product';
 import { ProductListItem } from '@ecommerce/models-product';
-import { BreadcrumbComponent } from '@ecommerce/ui-shop';
+import {
+  BreadcrumbComponent,
+  SidebarComponent,
+  SortingComponent,
+} from '@ecommerce/ui-shop';
 
 @Component({
   selector: 'ecommerce-shop',

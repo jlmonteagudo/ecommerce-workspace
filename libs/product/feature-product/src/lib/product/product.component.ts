@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { BreadcrumbComponent } from '@ecommerce/ui-shop';
 import {
   ColorFilterComponent,
+  ImageViewerComponent,
   RatingComponent,
+  RelatedProductsComponent,
   SizeFilterComponent,
 } from '@ecommerce/ui-product';
 import { Product, ProductListItem } from '@ecommerce/models-product';
-import { ImageViewerComponent } from '../ui/image-viewer/image-viewer.component';
-import { RelatedProductsComponent } from '../ui/related-products/related-products.component';
 
 @Component({
   selector: 'ecommerce-product',

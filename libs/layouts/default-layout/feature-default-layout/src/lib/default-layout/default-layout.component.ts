@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { NavbarComponent } from '../ui/navbar/navbar.component';
-import { HeaderComponent } from '../ui/header/header.component';
-import { FooterComponent } from '../ui/footer/footer.component';
-import { MobileNavbarComponent } from '../ui/mobile-navbar/mobile-navbar.component';
-import { MobileSidebarComponent } from '../ui/mobile-sidebar/mobile-sidebar.component';
+import {
+  FooterComponent,
+  HeaderComponent,
+  MobileNavbarComponent,
+  MobileSidebarComponent,
+  NavbarComponent,
+} from '@ecommerce/ui-default-layout';
 
 @Component({
   selector: 'ecommerce-default-layout',
