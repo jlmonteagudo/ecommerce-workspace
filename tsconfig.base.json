@@ -26,6 +26,9 @@
       "@ecommerce/feature-product": [
         "libs/product/feature-product/src/index.ts"
       ],
+      "@ecommerce/feature-register": [
+        "libs/auth/feature-register/src/index.ts"
+      ],
       "@ecommerce/feature-shop": ["libs/shop/feature-shop/src/index.ts"],
       "@ecommerce/models-product": ["libs/product/models-product/src/index.ts"],
       "@ecommerce/ui-default-layout": [

@@ -3,13 +3,20 @@
     class="max-w-lg mx-auto px-6 py-7 shadow rounded overflow-hidden"
     style="max-width: 32rem"
   >
-    <h2 class="text-2xl uppercase font-medium mb-1">Login</h2>
+    <h2 class="text-2xl uppercase font-medium mb-1">Create an account</h2>
     <p class="text-gray-600 mb-6 text-sm">
-      Login if you are a returning customer
+      Register if you dont' have an account
     </p>
 
     <form>
       <div class="space-y-4">
+        <div>
+          <label class="text-gray-600 mb-2 block"
+            >Full Name <span class="text-primary">*</span></label
+          >
+          <input type="text" class="input-box" placeholder="Enter your name" />
+        </div>
+
         <div>
           <label class="text-gray-600 mb-2 block"
             >Email Address <span class="text-primary">*</span></label
@@ -31,9 +38,20 @@
             placeholder="Type your password"
           />
         </div>
+
+        <div>
+          <label class="text-gray-600 mb-2 block"
+            >Confirm Password <span class="text-primary">*</span></label
+          >
+          <input
+            type="password"
+            class="input-box"
+            placeholder="Confirm your password"
+          />
+        </div>
       </div>
 
-      <div class="flex items-center justify-between mt-6">
+      <div class="flex items-center justify-center mt-6">
         <div class="flex items-center">
           <input
             type="checkbox"
@@ -41,11 +59,11 @@
             class="text-primary focus:ring-0 rounded-sm cursor-pointer"
           />
           <label for="agreement" class="text-gray-600 ml-3 cursor-pointer"
-            >Remember Me</label
-          >
+            >I have read and agree to the&nbsp;
+          </label>
         </div>
 
-        <a href="#" class="text-primary">Forgot Password?</a>
+        <a href="#" class="text-primary"> terms & conditions</a>
       </div>
 
       <div class="mt-4">
@@ -53,18 +71,18 @@
           type="submit"
           class="block w-full py-2 text-center text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium"
         >
-          Login
+          Create account
         </button>
       </div>
 
-      <!-- Login with social -->
+      <!-- Signup with social -->
       <div class="mt-6 flex justify-center relative">
         <div
           class="absolute left-0 top-3 w-full border-b-2 border-gray-200"
         ></div>
 
         <div class="text-gray-600 uppercase px-3 bg-white relative z-10">
-          or login in with
+          or signup with
         </div>
       </div>
 
@@ -81,12 +99,7 @@
           >Google</a
         >
       </div>
-
-      <p class="mt-4 text-gray-600 text-center">
-        Don't have an account?
-        <a [routerLink]="'/register'" class="text-primary">Register now</a>
-      </p>
-      <!-- End Login with social -->
+      <!-- End Signup with social -->
     </form>
   </div>
 </div>
