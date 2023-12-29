@@ -31,4 +31,9 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('@ecommerce/feature-register').then((m) => m.RegisterComponent),
   },
+  {
+    path: 'account',
+    loadComponent: () =>
+      import('@ecommerce/feature-account').then((m) => m.AccountComponent),
+  },
 ];

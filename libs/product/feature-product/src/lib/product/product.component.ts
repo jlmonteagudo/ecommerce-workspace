@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BreadcrumbComponent } from '@ecommerce/ui-shop';
 import {
   ColorFilterComponent,
   ImageViewerComponent,
@@ -9,6 +8,7 @@ import {
   SizeFilterComponent,
 } from '@ecommerce/ui-product';
 import { Product, ProductListItem } from '@ecommerce/models-product';
+import { BreadcrumbComponent } from '@ecommerce/ui-breadcrumb';
 
 @Component({
   selector: 'ecommerce-product',
