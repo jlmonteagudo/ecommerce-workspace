@@ -1,7 +1,7 @@
 <header class="py-4 shadow-sm bg-pink-100 lg:bg-white">
   <div class="container flex items-center justify-between">
     <!-- logo -->
-    <a href="#" class="block w-32">
+    <a [routerLink]="'/'" class="block w-32">
       <img src="/assets/images/easyshop.png" alt="logo" class="w-full" />
     </a>
     <!-- end logo -->
@@ -56,6 +56,7 @@
       </a>
 
       <a
+        [routerLink]="'account'"
         href="#"
         class="block text-center text-gray-700 hover:text-primary transition relative"
       >

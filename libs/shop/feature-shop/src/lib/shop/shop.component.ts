@@ -16,7 +16,7 @@ import { BreadcrumbComponent } from '@ecommerce/ui-breadcrumb';
     ProductListItemComponent,
   ],
   template: `
-    <ecommerce-breadcrumb />
+    <ecommerce-breadcrumb [section]="'Shop'" />
     <div
       class="container grid lg:grid-cols-4 gap-6 pt-4 pb-16 items-start relative"
     >

@@ -1,1 +1,61 @@
-<p>account works!</p>
+<ecommerce-breadcrumb [section]="'My Account'" />
+<div class="container lg:grid grid-cols-12 items-start gap-6 pt-4 pb-16">
+  <div class="col-span-3">
+    <ecommerce-account-sidebar />
+  </div>
+
+  <!-- Account Content -->
+  <div class="col-span-9 grid md:grid-cols-3 gap-4 mt-6 lg:mt-0">
+    <!-- Single Card -->
+    <div class="shadow rounded bg-gray-100 px-4 pt-6 pb-8">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-medium capitalize text-gray-800 text-lg">
+          Personal Profile
+        </h3>
+        <a href="#" class="text-primary">Edit</a>
+      </div>
+
+      <div class="space-y-1">
+        <h3 class="text-gray-700 font-medium">José Luis Monteagudo</h3>
+        <p class="text-gray-800">jl_monteagudo@yahoo.es</p>
+        <p class="text-gray-800">(123) 123 456 789</p>
+      </div>
+    </div>
+    <!-- End Single Card -->
+
+    <!-- Single Card -->
+    <div class="shadow rounded bg-gray-100 px-4 pt-6 pb-8">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-medium capitalize text-gray-800 text-lg">
+          Shipping Address
+        </h3>
+        <a href="#" class="text-primary">Edit</a>
+      </div>
+
+      <div class="space-y-1">
+        <h3 class="text-gray-700 font-medium">José Luis Monteagudo</h3>
+        <p class="text-gray-800">jl_monteagudo@yahoo.es</p>
+        <p class="text-gray-800">(123) 123 456 789</p>
+      </div>
+    </div>
+    <!-- End Single Card -->
+
+    <!-- Single Card -->
+    <div class="shadow rounded bg-gray-100 px-4 pt-6 pb-8">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-medium capitalize text-gray-800 text-lg">
+          Billing Address
+        </h3>
+        <a href="#" class="text-primary">Edit</a>
+      </div>
+
+      <div class="space-y-1">
+        <h3 class="text-gray-700 font-medium">José Luis Monteagudo</h3>
+        <p class="text-gray-800">jl_monteagudo@yahoo.es</p>
+        <p class="text-gray-800">(123) 123 456 789</p>
+      </div>
+    </div>
+    <!-- End Single Card -->
+  </div>
+  <!-- End Account Content -->
+</div>
