@@ -33,7 +33,26 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'account',
-    loadComponent: () =>
-      import('@ecommerce/feature-account').then((m) => m.AccountComponent),
+    loadChildren: () =>
+      import('@ecommerce/feature-account').then((m) => m.accountRoutes),
   },
+
+  // {
+  //   path: 'account',
+  //   loadComponent: () =>
+  //     import('@ecommerce/feature-account').then((m) => m.AccountComponent),
+  // },
+
+  // {
+  //   path: 'account',
+  //   loadComponent: () =>
+  //     import('@ecommerce/feature-account').then((m) => m.AccountComponent),
+  // },
+  // {
+  //   path: 'profile/address',
+  //   loadComponent: () =>
+  //     import('@ecommerce/feature-account').then(
+  //       (m) => m.ProfileAddressComponent
+  //     ),
+  // },
 ];

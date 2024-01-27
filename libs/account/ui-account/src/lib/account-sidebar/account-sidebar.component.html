@@ -19,7 +19,7 @@
   <!-- Single Link -->
   <div class="space-y-1 pl-8">
     <a
-      href="#"
+      [routerLink]="'/account'"
       class="relative text-base font-medium capitalize hover:text-primary transition block text-primary"
     >
       Manage Account
@@ -28,11 +28,17 @@
       </span>
     </a>
 
-    <a href="#" class="hover:text-primary transition capitalize block">
+    <a
+      [routerLink]="'/account'"
+      class="hover:text-primary transition capitalize block"
+    >
       Profile Information
     </a>
-    <a href="#" class="hover:text-primary transition capitalize block">
-      Manager Address
+    <a
+      [routerLink]="'/account/profile-address'"
+      class="hover:text-primary transition capitalize block"
+    >
+      Manage Address
     </a>
     <a href="#" class="hover:text-primary transition capitalize block">
       Change Password
