@@ -1,10 +1,10 @@
 import { Route } from '@angular/router';
-import { AccountComponent } from './account/account.component';
 
 export const accountRoutes: Route[] = [
   {
     path: '',
-    component: AccountComponent,
+    loadComponent: () =>
+      import('@ecommerce/feature-account').then((m) => m.AccountComponent),
     children: [
       {
         path: '',
@@ -14,20 +14,27 @@ export const accountRoutes: Route[] = [
       {
         path: 'profile',
         loadComponent: () =>
-          import('./profile/profile.component').then((m) => m.ProfileComponent),
+          import('@ecommerce/feature-account').then((m) => m.ProfileComponent),
       },
       {
         path: 'profile-address',
         loadComponent: () =>
-          import('./profile-address/profile-address.component').then(
+          import('@ecommerce/feature-account').then(
             (m) => m.ProfileAddressComponent
           ),
       },
       {
         path: 'change-password',
         loadComponent: () =>
-          import('./change-password/change-password.component').then(
+          import('@ecommerce/feature-account').then(
             (m) => m.ChangePasswordComponent
+          ),
+      },
+      {
+        path: 'wishlist',
+        loadComponent: () =>
+          import('@ecommerce/feature-wishlist').then(
+            (m) => m.FeatureWishlistComponent
           ),
       },
     ],

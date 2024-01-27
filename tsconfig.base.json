@@ -33,6 +33,9 @@
         "libs/auth/feature-register/src/index.ts"
       ],
       "@ecommerce/feature-shop": ["libs/shop/feature-shop/src/index.ts"],
+      "@ecommerce/feature-wishlist": [
+        "libs/wishlist/feature-wishlist/src/index.ts"
+      ],
       "@ecommerce/models-product": ["libs/product/models-product/src/index.ts"],
       "@ecommerce/ui-account": ["libs/account/ui-account/src/index.ts"],
       "@ecommerce/ui-breadcrumb": ["libs/shared/ui-breadcrumb/src/index.ts"],
