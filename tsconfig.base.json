@@ -44,7 +44,8 @@
       ],
       "@ecommerce/ui-home": ["libs/home/ui-home/src/index.ts"],
       "@ecommerce/ui-product": ["libs/product/ui-product/src/index.ts"],
-      "@ecommerce/ui-shop": ["libs/shop/ui-shop/src/index.ts"]
+      "@ecommerce/ui-shop": ["libs/shop/ui-shop/src/index.ts"],
+      "@ecommerce/ui-wishlist": ["libs/wishlist/ui-wishlist/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

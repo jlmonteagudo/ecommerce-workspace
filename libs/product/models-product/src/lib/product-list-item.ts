@@ -6,4 +6,5 @@ export interface ProductListItem {
   oldPrice: number;
   reviewsAverage: number;
   reviewsNumber: number;
+  stock?: string;
 }
