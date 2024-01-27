@@ -23,6 +23,13 @@ export const accountRoutes: Route[] = [
             (m) => m.ProfileAddressComponent
           ),
       },
+      {
+        path: 'change-password',
+        loadComponent: () =>
+          import('./change-password/change-password.component').then(
+            (m) => m.ChangePasswordComponent
+          ),
+      },
     ],
   },
 ];
