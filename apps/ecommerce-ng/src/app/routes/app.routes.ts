@@ -35,4 +35,11 @@ export const appRoutes: Route[] = [
     path: 'account',
     loadChildren: () => import('./account.routes').then((m) => m.accountRoutes),
   },
+  {
+    path: 'checkout',
+    loadComponent: () =>
+      import('@ecommerce/feature-checkout').then(
+        (m) => m.FeatureCheckoutComponent
+      ),
+  },
 ];

@@ -21,6 +21,9 @@
       "@ecommerce/feature-account": [
         "libs/account/feature-account/src/index.ts"
       ],
+      "@ecommerce/feature-checkout": [
+        "libs/cart/feature-checkout/src/index.ts"
+      ],
       "@ecommerce/feature-default-layout": [
         "libs/layouts/default-layout/feature-default-layout/src/index.ts"
       ],
