@@ -42,4 +42,9 @@ export const appRoutes: Route[] = [
         (m) => m.FeatureCheckoutComponent
       ),
   },
+  {
+    path: 'cart',
+    loadComponent: () =>
+      import('@ecommerce/feature-cart').then((m) => m.FeatureCartComponent),
+  },
 ];

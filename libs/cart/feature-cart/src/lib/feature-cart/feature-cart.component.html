@@ -1,0 +1,77 @@
+<ecommerce-breadcrumb [section]="'SHOPPING CART'" />
+<div class="container lg:grid grid-cols-12 gap-6 items-start pb-16 pt-4">
+  <div class="lg:col-span-8">
+    <!-- Header -->
+    <div class="bg-gray-200 py-2 pl-12 pr-20 xl:pr-28 mb-4 hidden md:flex">
+      <p class="text-gray-600 text-center">Product</p>
+      <p class="text-gray-600 text-center ml-auto mr-16 xl:mr-24">Quantity</p>
+      <p class="text-gray-600 text-center">Total</p>
+    </div>
+
+    <!-- Products List -->
+    <div class="space-y-4">
+      <ecommerce-cart-item
+        *ngFor="let cartItem of cartItems"
+        [cartItem]="cartItem"
+      />
+    </div>
+  </div>
+
+  <div
+    class="lg:col-span-4 border border-gray-200 px-4 py-4 rounded mt-6 lg:mt-0"
+  >
+    <h3 class="text-gray-800 text-lg mb-4 font-medium uppercase">
+      Order Summary
+    </h3>
+
+    <!-- SUMMARY -->
+    <div class="space-y-1 text-gray-600 pb-3 border-b border-gray-200">
+      <div class="flex justify-between font-medium">
+        <p>Subtotal</p>
+        <p>$355.00</p>
+      </div>
+
+      <div class="flex justify-between font-medium">
+        <p>Delivery</p>
+        <p>Free</p>
+      </div>
+
+      <div class="flex justify-between font-medium">
+        <p>Tax</p>
+        <p>Free</p>
+      </div>
+    </div>
+
+    <!-- TOTAL -->
+    <div
+      class="flex justify-between my-3 text-gray-800 font-semibold uppercase"
+    >
+      <h4>TOTAL</h4>
+      <h4>$355.00</h4>
+    </div>
+
+    <!-- COUPON -->
+    <div class="flex mb-4">
+      <input
+        type="text"
+        class="pl-4 w-full border border-r-0 border-primary py-2 px-3 rounded-l-md focus:ring-primary focus:border-primary text-sm"
+        placeholder="Coupon"
+      />
+
+      <button
+        type="button"
+        class="bg-primary border border-primary text-white px-5 font-medium rounded-r-md hover:bg-transparent hover:text-primary transition text-sm w-full block text-center"
+      >
+        Apply
+      </button>
+    </div>
+
+    <!-- CHECKOUT BUTTON -->
+    <a
+      href="#"
+      class="bg-primary border border-primary text-white px-4 py-3 font-medium rounded-md uppercase hover:bg-transparent hover:text-primary transition text-sm w-full block text-center"
+    >
+      Process to checkout
+    </a>
+  </div>
+</div>
