@@ -30,6 +30,9 @@
       ],
       "@ecommerce/feature-home": ["libs/home/feature-home/src/index.ts"],
       "@ecommerce/feature-login": ["libs/auth/feature-login/src/index.ts"],
+      "@ecommerce/feature-order-completed": [
+        "libs/cart/feature-order-completed/src/index.ts"
+      ],
       "@ecommerce/feature-product": [
         "libs/product/feature-product/src/index.ts"
       ],

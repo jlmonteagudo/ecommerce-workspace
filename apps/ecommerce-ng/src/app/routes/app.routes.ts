@@ -47,4 +47,11 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('@ecommerce/feature-cart').then((m) => m.FeatureCartComponent),
   },
+  {
+    path: 'order-completed',
+    loadComponent: () =>
+      import('@ecommerce/feature-order-completed').then(
+        (m) => m.FeatureOrderCompletedComponent
+      ),
+  },
 ];
