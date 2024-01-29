@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CartItem } from '@ecommerce/models-cart';
 
@@ -10,5 +10,6 @@ import { CartItem } from '@ecommerce/models-cart';
   styleUrls: ['./cart-item.component.css'],
 })
 export class CartItemComponent {
-  @Input() cartItem!: CartItem;
+  // @Input() cartItem!: CartItem;
+  cartItem = input.required<CartItem>();
 }
